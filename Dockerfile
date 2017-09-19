@@ -1,9 +1,10 @@
 FROM ubuntu:xenial-20170915
 
-RUN apt update && \
-    apt install -y wget software-properties-common && \
-    apt update && \
-    apt install gcc-6;
+RUN apt-get update && \
+    apt-get install -y wget software-properties-common && \
+    add-apt-repository ppa:ubuntu-toolchain-r/test && \
+    apt-get update && \
+    apt-get install -y gcc-6;
 
 RUN mkdir /root/uCPP && \
     cd /root/uCPP/ && \
