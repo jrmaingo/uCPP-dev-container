@@ -1,12 +1,13 @@
 FROM ubuntu:xenial-20170915
 
 RUN apt-get update && \
-    apt-get install -y wget software-properties-common && \
+    apt-get install -y wget make software-properties-common && \
     add-apt-repository ppa:ubuntu-toolchain-r/test && \
     apt-get update && \
-    apt-get install -y gcc-6;
+    apt-get install -y g++-6;
 
 RUN mkdir /root/uCPP && \
     cd /root/uCPP/ && \
     wget http://plg.uwaterloo.ca/~usystem/pub/uSystem/u++-7.0.0.sh && \
-    sh u++-7.0.0.sh -p /usr/local/ -c /usr/local/bin/ ;
+    echo "Ready to install uC++" ;
+    #sh u++-7.0.0.sh -p /usr/local/ -c /usr/local/bin/ ;
