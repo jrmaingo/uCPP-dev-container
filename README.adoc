@@ -1,0 +1,27 @@
+uC++ Development Environment
+============================
+A docker container that can be used to build and run uC++ code. This container
+is intended for users who would like to compile uC++ locally and do not use
+a supported platform for their programming assignments.
+
+== Prerequisites
+.Bulleted
+* Install docker (via the https://docker.com[official website] or through your
+package manager)
+* Be willing to learn a little docker
+
+== Installing
+Ensure that you have a stable internet connection.
+
+.Ordered
+. clone this repo locally
+. `cd uCPP-dev-container`
+. `docker build -t cs-343-dev-env .`
+
+== Running
+.Ordered
+. `docker run -ti cs-343-dev-env bash`
+. compile and run your programs from this prompt (see docker docs for more
+complex usage)
+. `exit` when you are done, *THIS WILL DELETE ALL DATA IN THE CONTAINER, DO NOT
+BLAME ME IF YOU LOSE YOUR WORK. YOU HAVE BEEN WARNED*
