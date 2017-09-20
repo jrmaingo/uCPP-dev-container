@@ -1,4 +1,4 @@
 CONTAINERNAME=cs-343-dev-env
 
-container:
+image:
 	docker build -t $(CONTAINERNAME) .
