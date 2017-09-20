@@ -1,7 +1,7 @@
 uC++ Development Environment
 ============================
 
-A docker container that can be used to build and run uC++ code. This container
+A docker container that can be used to build and run uC\++ code. This container
 is intended for users who would like to compile uC++ locally and do not use
 a supported platform for their programming assignments.
 
