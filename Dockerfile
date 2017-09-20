@@ -1,7 +1,7 @@
 FROM ubuntu:xenial-20170915
 
 RUN apt-get update && \
-    apt-get install -y wget file make g++;
+    apt-get install -y wget file make g++ gdb valgrind ;
 
 RUN mkdir /root/uCPP && \
     cd /root/uCPP/ && \
