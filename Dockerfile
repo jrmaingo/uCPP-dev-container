@@ -1,7 +1,7 @@
 FROM ubuntu:xenial-20170915
 
 RUN apt-get update && \
-    apt-get install -y wget file make g++ gdb valgrind \
+    apt-get install -y wget file make g++ gdb valgrind time \
     software-properties-common && \
     add-apt-repository ppa:ubuntu-toolchain-r/test && \
     apt-get update && \
